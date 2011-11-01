@@ -1,0 +1,4 @@
+cron:
+- description: gather voices from mentions
+  url: /cron/gathervoice
+  schedule: every 30 minutes

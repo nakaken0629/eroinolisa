@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>eroino - start</title>
+ </head>
+ <body>
+  <div id="my_body">
+   <img src="/img/title.png" />
+   <p>Hi, my name is Lisa.</p>
+   <img src="/img/woman2.jpg" />
+   <h1>How to enjoy</h1>
+   <p>STEP 1. Send me(<a href="http://twitter.com/eroinolisa">@eroinolisa</a>) your twitter's mention, and I learn a new sentence.<br />
+   <span class="translated">（私にtwitterでmentionを送って。そうしたら文章を覚えるわ）</span></p>
+   <p>STEP 2. Hear my "sexy" voice by clicking URL, and please judge it!<br />
+   <span class="translated">（URLをクリックして、私のセクシーボイスを聞いて。そして、セクシーかどうか決めて頂戴！）</span></p>
+   <h1>My choice</h1>
+   <a href="/voice/" class="mostsexy">Best sexy voice now.</a>
+   <h1>New voices</h1>
+{% for voice in newvoices %}
+   <a href="/voice/{{ voice.key.name}}">voice {{ forloop.counter }}</a>
+{% endfor %}
+   <h1>Sexy voices</h1>
+{% for voice in sexyvoices %}
+   <a href="/voice/{{ voice.key.name}}">voice {{ forloop.counter }}</a>
+{% endfor %}
+   <hr />
+   <p style="font-size: 75%">Mashap Award #7 応募作品</p>
+  </div>
+ </body>
+</html>

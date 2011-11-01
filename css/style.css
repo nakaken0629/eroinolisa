@@ -1,0 +1,39 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #FFEEEE;
+}
+
+#my_body {
+    height: 100%;
+    width: 800px;
+    background-color: #471612;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: #8888FF;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.translated {
+    font-size: 80%;
+    color: #CCCCCC;
+}
+
+.mostsexy {
+    font-size: 150%;
+    font-weight: bold;
+}
